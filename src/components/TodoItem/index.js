@@ -8,13 +8,15 @@ const TodoItem = props => {
   const onDelete = () => {
     onDeleteTodo(id)
   }
-  ;<li className="each-todo-item">
-    <p>{title}</p>
-    console.log({title});
-    <button className="button-container" type="button" onClick={onDelete}>
-      Delete
-    </button>
-  </li>
+
+  return (
+    <li className="each-todo-item">
+      <p className="title-description">{title}</p>
+      <button className="button-container" type="button" onClick={onDelete}>
+        Delete
+      </button>
+    </li>
+  )
 }
 
 export default TodoItem

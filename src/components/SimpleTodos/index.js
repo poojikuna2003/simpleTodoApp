@@ -47,10 +47,10 @@ class SimpleTodos extends Component {
   }
 
   onDeleteTodo = id => {
-    const {TodosList} = this.state
-    const filteredTodosList = TodosList.filter(each => each.id !== id)
+    const {todosList} = this.state
+    const filteredTodosList = todosList.filter(each => each.id !== id)
     this.setState({
-      TodosList: filteredTodosList,
+      todosList: filteredTodosList,
     })
   }
 
@@ -59,7 +59,7 @@ class SimpleTodos extends Component {
 
     return (
       <div className="app-container">
-        <div className="todos-container">
+        <div className="todo-container">
           <h1 className="heading">Simple Todos</h1>
           <ul>
             {todosList.map(eachTodo => (
