@@ -1,0 +1,13 @@
+/* Write your CSS here */
+.each-todo-item {
+  display: flex;
+  flex-direction: row;
+  margin: 9px;
+}
+.button-container {
+  border: #ff0b37 2px solid;
+  background-color: #ffffff;
+  color: #ff0b37;
+  justify-content: flex-end;
+  padding: 3px;
+}
